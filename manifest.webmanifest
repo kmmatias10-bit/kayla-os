@@ -1,0 +1,8 @@
+{
+  "name": "Kayla OS \u2014 Kitchen",
+  "short_name": "Kayla OS",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0e1411",
+  "theme_color": "#0e1411"
+}
