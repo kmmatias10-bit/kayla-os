@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Pantry | kOS</title>
+
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="manifest" href="../manifest.webmanifest">
+</head>
+
+<body>
+  <div class="app-shell">
+
+    <aside class="sidebar">
+      <a class="brand" href="../index.html" aria-label="kOS home">
+        <span class="brand-name">kOS</span>
+        <span class="brand-tagline">Your life, beautifully organized</span>
+      </a>
+
+      <nav class="main-navigation" aria-label="Main navigation">
+        <a class="nav-link" href="../index.html">
+          <span class="nav-icon">⌂</span>
+          <span>Dashboard</span>
+        </a>
+
+        <a class="nav-link active" href="pantry.html">
+          <span class="nav-icon">◇</span>
+          <span>Pantry</span>
+        </a>
+
+        <a class="nav-link" href="#">
+          <span class="nav-icon">♡</span>
+          <span>Recipes</span>
+        </a>
+
+        <a class="nav-link" href="#">
+          <span class="nav-icon">✓</span>
+          <span>Grocery List</span>
+        </a>
+
+        <a class="nav-link" href="#">
+          <span class="nav-icon">□</span>
+          <span>Meal Planner</span>
+        </a>
+
+        <a class="nav-link" href="#">
+          <span class="nav-icon">♢</span>
+          <span>Closet & Outfits</span>
+        </a>
+
+        <a class="nav-link" href="#">
+          <span class="nav-icon">✎</span>
+          <span>Notes</span>
+        </a>
+      </nav>
+
+      <a class="nav-link settings-link" href="#">
+        <span class="nav-icon">⚙</span>
+        <span>Settings</span>
+      </a>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <button
+          class="menu-button"
+          id="menuButton"
+          type="button"
+          aria-label="Open navigation"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+
+        <p class="today-label" id="todayLabel"></p>
+      </header>
+
+      <section class="page-heading">
+        <div>
+          <p class="eyebrow">Kitchen inventory</p>
+          <h1>My Pantry</h1>
+          <p class="page-description">
+            Keep track of what you have, where it lives, and what needs
+            attention.
+          </p>
+        </div>
+
+        <button class="primary-button" id="addItemButton" type="button">
+          <span aria-hidden="true">＋</span>
+          Add item
+        </button>
+      </section>
+
+      <section class="pantry-summary" aria-label="Pantry summary">
+        <article class="summary-card">
+          <span class="summary-icon">◇</span>
+
+          <div>
+            <span class="summary-label">Total items</span>
+            <strong class="summary-number" id="totalItems">0</strong>
+          </div>
+        </article>
+
+        <article class="summary-card low-stock-summary">
+          <span class="summary-icon">!</span>
+
+          <div>
+            <span class="summary-label">Running low</span>
+            <strong class="summary-number" id="lowStockItems">0</strong>
+          </div>
+        </article>
+
+        <article class="summary-card expiring-summary">
+          <span class="summary-icon">◷</span>
+
+          <div>
+            <span class="summary-label">Expiring soon</span>
+            <strong class="summary-number" id="expiringItems">0</strong>
+          </div>
+        </article>
+
+        <article class="summary-card">
+          <span class="summary-icon">⌂</span>
+
+          <div>
+            <span class="summary-label">Storage areas</span>
+            <strong class="summary-number" id="storageAreas">0</strong>
+          </div>
+        </article>
+      </section>
+
+      <section class="inventory-section">
+        <div class="inventory-toolbar">
+          <label class="search-field">
+            <span class="search-icon" aria-hidden="true">⌕</span>
+            <span class="visually-hidden">Search pantry</span>
+
+            <input
+              id="pantrySearch"
+              type="search"
+              placeholder="Search your pantry..."
+              autocomplete="off"
+            >
+          </label>
+
+          <div class="filter-group">
+            <label>
+              <span class="visually-hidden">Filter by category</span>
+
+              <select id="categoryFilter">
+                <option value="all">All categories</option>
+              </select>
+            </label>
+
+            <label>
+              <span class="visually-hidden">Filter by storage location</span>
+
+              <select id="locationFilter">
+                <option value="all">All locations</option>
+              </select>
+            </label>
+
+            <label>
+              <span class="visually-hidden">Filter by item status</span>
+
+              <select id="statusFilter">
+                <option value="all">All items</option>
+                <option value="low">Running low</option>
+                <option value="expiring">Expiring soon</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <div class="inventory-header">
+          <div>
+            <p class="section-kicker">Inventory</p>
+            <h2>Everything in its place</h2>
+          </div>
+
+          <p class="inventory-count" id="inventoryCount">0 items</p>
+        </div>
+
+        <div class="inventory-grid" id="inventoryGrid">
+          <div class="empty-state" id="emptyPantryState">
+            <span class="empty-state-icon" aria-hidden="true">◇</span>
+            <h3>Your pantry is ready</h3>
+            <p>
+              Add your first item to begin organizing your kitchen inventory.
+            </p>
+
+            <button class="secondary-button" type="button">
+              Add your first item
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+  </div>
+
+  <script src="../js/app.js"></script>
+</body>
+</html>
