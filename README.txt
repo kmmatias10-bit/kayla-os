@@ -1,21 +1,26 @@
-KAYLA OS — KITCHEN v1.0
+# Kayla OS v1.0
 
-WHAT IT DOES
-- Dashboard
-- Inventory search, add, edit, and use-one controls
-- Recipe search and recipe details
-- Shopping checklist
-- Weekly meal planner
-- Local backup/import
+This is the complete replacement repository for your Kayla OS website.
 
-TRY IT ON A COMPUTER
-1. Unzip the folder.
-2. Open a command prompt or terminal in the folder.
-3. Run: python -m http.server 8000
-4. Open http://localhost:8000
+## Upload to GitHub
+1. Open your `kayla-os` repository.
+2. Click **Add file → Upload files**.
+3. Upload every file from this folder.
+4. Commit directly to the `main` branch.
+5. Wait for GitHub Pages to rebuild.
+6. Refresh your live site.
 
-HOST IT FREE
-Upload the unzipped folder to a free static host such as GitHub Pages, Cloudflare Pages, or Netlify. Once hosted, open it in Safari and use Share > Add to Home Screen.
+## Important
+GitHub uses lowercase file names. The main page must be named exactly:
 
-DATA
-The starting data came from Pantry_OS_Glide_Google_Sheets.xlsx. Changes are stored in the browser on the device. Use Settings > Export backup regularly.
+`index.html`
+
+This package includes:
+- Pastel glitter Kayla OS design
+- Custom K app icon
+- Pantry inventory
+- Recipe search
+- Shopping list
+- Meal planner
+- Local device storage
+- Backup/import
