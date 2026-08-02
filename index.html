@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>kOS | Your Life, Beautifully Organized</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="manifest" href="manifest.webmanifest">
+</head>
+
+<body>
+  <div class="app-shell">
+
+    <aside class="sidebar">
+      <a class="brand" href="index.html" aria-label="kOS home">
+        <span class="brand-name">kOS</span>
+        <span class="brand-tagline">Your life, beautifully organized</span>
+      </a>
+
+      <nav class="main-navigation" aria-label="Main navigation">
+        <a class="nav-link active" href="index.html">
+          <span class="nav-icon">⌂</span>
+          <span>Dashboard</span>
+        </a>
+
+        <a class="nav-link" href="pages/pantry.html">
+          <span class="nav-icon">◇</span>
+          <span>Pantry</span>
+        </a>
+
+        <a class="nav-link" href="#">
+          <span class="nav-icon">♡</span>
+          <span>Recipes</span>
+        </a>
+
+        <a class="nav-link" href="#">
+          <span class="nav-icon">✓</span>
+          <span>Grocery List</span>
+        </a>
+
+        <a class="nav-link" href="#">
+          <span class="nav-icon">□</span>
+          <span>Meal Planner</span>
+        </a>
+
+        <a class="nav-link" href="#">
+          <span class="nav-icon">♢</span>
+          <span>Closet & Outfits</span>
+        </a>
+
+        <a class="nav-link" href="#">
+          <span class="nav-icon">✎</span>
+          <span>Notes</span>
+        </a>
+      </nav>
+
+      <a class="nav-link settings-link" href="#">
+        <span class="nav-icon">⚙</span>
+        <span>Settings</span>
+      </a>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <button
+          class="menu-button"
+          id="menuButton"
+          type="button"
+          aria-label="Open navigation"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+
+        <p class="today-label" id="todayLabel"></p>
+      </header>
+
+      <section class="welcome-section">
+        <p class="eyebrow">Welcome home</p>
+        <h1>Good morning, Kayla.</h1>
+        <p class="welcome-message">
+          Everything you need for a beautifully organized day.
+        </p>
+      </section>
+
+      <section class="dashboard-grid" aria-label="kOS modules">
+        <a class="module-card pantry-card" href="pages/pantry.html">
+          <span class="card-icon">◇</span>
+          <span class="card-label">Kitchen</span>
+          <h2>Pantry</h2>
+          <p>Keep track of what you have and what needs attention.</p>
+          <span class="card-action">Open pantry →</span>
+        </a>
+
+        <article class="module-card">
+          <span class="card-icon">♡</span>
+          <span class="card-label">Inspiration</span>
+          <h2>Recipes</h2>
+          <p>Save favorite meals and discover what you can cook.</p>
+          <span class="coming-soon">Coming soon</span>
+        </article>
+
+        <article class="module-card">
+          <span class="card-icon">□</span>
+          <span class="card-label">This week</span>
+          <h2>Meal Planner</h2>
+          <p>Plan meals and make the week feel effortless.</p>
+          <span class="coming-soon">Coming soon</span>
+        </article>
+
+        <article class="module-card closet-card">
+          <span class="card-icon">♢</span>
+          <span class="card-label">Personal style</span>
+          <h2>Closet & Outfits</h2>
+          <p>Organize your wardrobe and create inspired looks.</p>
+          <span class="coming-soon">Coming soon</span>
+        </article>
+
+        <article class="module-card">
+          <span class="card-icon">✓</span>
+          <span class="card-label">Shopping</span>
+          <h2>Grocery List</h2>
+          <p>Keep your shopping list organized and close at hand.</p>
+          <span class="coming-soon">Coming soon</span>
+        </article>
+
+        <article class="module-card">
+          <span class="card-icon">✎</span>
+          <span class="card-label">Your space</span>
+          <h2>Notes</h2>
+          <p>Capture reminders, ideas, lists, and little thoughts.</p>
+          <span class="coming-soon">Coming soon</span>
+        </article>
+      </section>
+    </main>
+
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
